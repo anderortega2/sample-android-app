@@ -26,6 +26,13 @@ steps:
     gradleOptions: '-Xmx3072m'
     sonarQubeRunAnalysis: false
 
+- task: AndroidSigning@3
+  inputs:
+    apkFiles: '**/*.apk'
+    apksignerKeystoreFile: 'orekaappmobile.keystore'
+    apksignerKeystorePassword: 'Support0'
+    apksignerKeystoreAlias: 'Oreka'
+    apksignerKeyPassword: 'Support0'
   
 - task: CopyFiles@2
   inputs:
