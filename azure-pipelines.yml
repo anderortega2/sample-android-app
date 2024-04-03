@@ -25,11 +25,7 @@ steps:
     jdkVersionOption: '1.8'
     gradleOptions: '-Xmx3072m'
     sonarQubeRunAnalysis: false
-    ConnectionType: 'AzureRM'
-    azureSubscription: 'API_subscription(76d6dd0e-bced-4eab-85d8-b982e32f8fca)'
-    appType: 'mobileApp'
-    WebAppName: 'orekaloginmobile'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+
   
 - task: CopyFiles@2
   inputs:
