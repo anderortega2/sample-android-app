@@ -30,9 +30,9 @@ steps:
   inputs:
     apkFiles: '**/*.apk'
     apksignerKeystoreFile: 'orekaappmobile.keystore'
-    apksignerKeystorePassword: 'Support0'
+    apksignerKeystorePassword: '$(KeystorePass)'
     apksignerKeystoreAlias: 'Oreka'
-    apksignerKeyPassword: 'Support0'
+    apksignerKeyPassword: '$(KeystorePass)'
   
 - task: CopyFiles@2
   inputs:
